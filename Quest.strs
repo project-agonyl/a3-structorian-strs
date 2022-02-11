@@ -1,0 +1,61 @@
+// A3 quest file editor
+
+[filemask="*.dat"]
+struct QuestFile
+{
+  u32 QuestId;
+  u32 StartNpc;
+  u32 SubmitNpc;
+  u32 Filler1;
+  u32 Filler2;
+  u32 Filler3;
+  u32 Filler4;
+  u32 Filler5;
+  u16 LowLevel;
+  u16 Filler6;
+  u16 HighLevel;
+  u16 Filler7;
+  u32 Filler8;
+  u32 RewardItem1;
+  u32 RewardItem2;
+  u32 RewardItem3;
+  u32 Filler9;
+  u32 Filler10;
+  u32 Filler11;
+  u32 RewardQuantity1;
+  u32 RewardQuantity2;
+  u32 RewardQuantity3;
+  u32 Experience;
+  u32 Woonz;
+  u32 Lore;
+  u32 UnknownField1;
+  child QuestRequirement [count=6];
+}
+
+struct QuestRequirement
+{
+  u32 TaskType;
+  u32 MapNumber;
+  u32 UnknownField1;
+  u32 UnknownField2;
+  u32 MonsterCode;
+  u32 MonsterQuantity;
+  u32 Filler1;
+  u32 Filler2;
+  u32 Filler3;
+  u32 Filler4;
+  u32 Filler5;
+  u32 Filler6;
+  u32 Filler7;
+  u32 Filler8;
+  u32 Filler9;
+  u32 Filler10;
+  u32 Filler11;
+  u32 Filler12;
+  u32 Filler13;
+  u32 Filler14;
+  u32 Filler15;
+  u32 Filler16;
+  u32 Filler17;
+  u32 Filler18;
+}
