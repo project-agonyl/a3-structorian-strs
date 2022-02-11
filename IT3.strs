@@ -1,0 +1,20 @@
+// A3 IT3.bin file editor
+
+[filemask="*.bin"]
+struct IT3
+{
+  child Item [count=999];
+}
+
+struct Item
+{
+  [hidden] u16 Unknown;
+  u16 RowNumber;
+  cstr ItemName [len=30];
+  [hidden] u16 Filler1;
+  u32 NpcPrice;
+  [hidden] u16 Unknown1;
+  [hidden] u16 Unknown2;
+  [hidden] u16 Unknown3;
+  [hidden] u16 Unknown4;
+}
