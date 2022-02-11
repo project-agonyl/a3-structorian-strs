@@ -14,7 +14,7 @@ struct Item
   u16 ItemType;
   cstr ItemName [len=30];
   [hidden] u16 Filler1;
-  [hidden] u32 NpcPrice;
+  u32 NpcPrice;
   [hidden] u32 Unknown1;
   [hidden] u32 Unknown2;
   [hidden] u32 Unknown3;
