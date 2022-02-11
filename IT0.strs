@@ -1,0 +1,35 @@
+// A3 IT0.bin file editor
+
+[filemask="*.bin"]
+struct IT0
+{
+  child Item [count=1006];
+}
+
+struct Item
+{
+  [hidden] u16 Unknown;
+  u16 RowNumber;
+  u16 SlotIndex;
+  u16 ItemType;
+  cstr ItemName [len=30];
+  [hidden] u16 Filler1;
+  [hidden] u32 NpcPrice;
+  [hidden] u32 Unknown1;
+  [hidden] u32 Unknown2;
+  [hidden] u32 Unknown3;
+  [hidden] u32 Unknown4;
+  [hidden] u16 Unknown5;
+  repeat 10
+  {
+    u16 AdditionalAttribute;
+    u16 Strength;
+    u16 Dexterity;
+    u16 Intelligence;
+    u16 Attribute;
+    u16 AttributeRange;
+    u16 BlueOption;
+    u16 RedOption;
+    u16 GreyOption;
+  }
+}
