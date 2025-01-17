@@ -1,0 +1,14 @@
+// A3 GT.bin file editor
+
+[filemask="*.bin"]
+struct GT
+{
+  u32 Total;
+  child Item [count=Total];
+}
+
+struct Item
+{
+  u32 StringLength;
+  cstr Msg [len=StringLength];
+}
